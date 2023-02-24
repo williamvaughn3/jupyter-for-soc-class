@@ -1,0 +1,25 @@
+version: '3.5'
+services:
+  jupyter-hunt:
+    user: root
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: jupyter-hunt-mfer-hunt
+    volumes:
+      - ./notebooks:/opt/jupyterlab/notebooks
+      - ./shared_dir:/opt/jupyterlab/shared_dir
+    environment:
+      JUPYTER_TYPE: lab
+      JUPYTER_BASE_URL: /jupyter
+    restart: always
+    network_mode: host 
+    entrypoint: ['jupyter', 'lab', '--ip=0.0.0.0', '--port=8888', '--no-browser', '--notebook-dir=/opt/jupyterlab/notebooks/', '--allow-root' ]
+volumes:
+  notebooks:
+    driver: local
+  shared_dir:
+    driver: local
+
+    
+    

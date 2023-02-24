@@ -1,0 +1,15 @@
+ksql
+confluent-kafka
+splunk-sdk
+Kqlmagic
+neo4j
+openhunt
+pyarrow
+msticpy
+altair
+elasticsearch-dsl
+matplotlib
+networkx
+nxviz
+urllib3
+pyarrow
