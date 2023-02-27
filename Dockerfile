@@ -85,7 +85,7 @@ RUN pip install bash_kernel
 RUN pip install powershell-kernel
 RUN conda install -c conda-forge bash_kernel
 RUN python -m powershell_kernel.install --powershell-command pwsh
-RUN pip install py2neo plotly altair ipywidgets scipy bokeh pyreadline 
+RUN pip install py2neo plotly altair ipywidgets scipy bokeh pyreadline ipython
 RUN pip install jupyterlab_widgets 
 RUN pip install "jupyterlab>=3" "ipywidgets>=7.6" 
 RUN jupyter nbextension enable --py widgetsnbextension
@@ -104,6 +104,17 @@ RUN conda install -c conda-forge python-graphviz
 RUN conda install -c conda-forge xeus-sql
 RUN conda install -c conda-forge black
 RUN conda install -c conda-forge jupyterlab-spellchecker
+RUN conda install -c conda-forge jupyterlab-git
+RUN conda install -c conda-forge jupyterlab_code_formatter
+RUN conda install -c conda-forge jupyterlab-snippets
+RUN conda install -c conda-forge jupyterlab-nvdashboard
+RUN conda install -c conda-forge jupyterlab-nbextensions
+RUN conda install -c conda-forge jupyterlab-nbextensions-configurator
+RUN conda install -c conda-forge jupyterlab-nbsearch
+RUN conda install -c conda-forge jupyterlab-nb2pdf
+RUN pip install --no-cache-dir ansible
+RUN pip install --no-cache-dir ansible-jupyter-widgets
+RUN pip install --no-cache-dir ansible-kernel
 RUN pip install jupyterlab_code_formatter 
 RUN conda install -c conda-forge nodejs 
 USER root
@@ -112,4 +123,3 @@ RUN usermod -aG root jovyan
 RUN ln -s ~/.dotnet/tools/pwsh /usr/bin/pwsh;
 RUN ln -s ~/.dotnet/tools/dotnet-interactive /usr/bin/dotnet-interactive
 USER jovyan
-
