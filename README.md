@@ -2,7 +2,7 @@
 
 Source container is all-spark-notebook.
 
-Inspired by, has content from and based on the following projects:
+Inspired by and based on or has content from the following projects:
 
     https://github.com/OTRF/notebooks-forge
     https://github.com/philhagen/sof-elk/blob/main/VM_README.md
