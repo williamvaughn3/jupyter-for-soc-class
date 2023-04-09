@@ -1,51 +1,13 @@
-# JupyterLab Stuff
+# JupyterLab Stuff for soc class
 
-<u>
+Source container is all-spark-notebook.
 
-## Backrgound
-</u>
-
-<i><b> <text style="color:red" align="center"> Dependency Hell is hurtful and true.   </text></i></b>
-
-    Based on all-spark-notebook, but added some stuff like powershell, SplunkSDK, Hadoop, Spark, Elasticsearch/Kibana SDKs, graphviz, matplotlib, maxmind for geoip, and a bunch of other stuff 
-
-
-    Has a bunch of other sci stuff too, like numpy, pandas, scipy, scikit-learn, etc.   
-
-    Added a bunch of addons to help with things, pdf export nbextensions, nb2py, search, spellcheck, ect, docs for how to use some are in the folders.  Check docker file to see all pip and conda installs
-    to get an idea what is in here.
-    
-<br>
-
-    See the File structure at bottom of this doc for more info
-    Example pages from sources for a bunch of add on tools
-    Library contains docs, tutorials, and demos for a bunch of stuff
-    Notebooks contains a bunch of stuff, hunt, pre-hunt, sigma, windows, linux, etc.
-
-    Good stuff.  Aggregated from multiple sources to include threathunternotbook, HELK, and others
-
-<hr />
-
-## Run it
-
-> May have to run sudo if you haven't did the sudoless docker stuff
-
-`docker-compose up & `
-
-> Will build a custom image.
-
-> Easy way to delete
-`docker rm -f $(docker ps -aq)`
-
-**Delete image**
-
-> If you want to keep the source to change shit in the dockerfile; (Keeps you from pulling base image)
-`docker image ls | grep -v "all" | awk '{print $3}'`
-> 
-> Otherwise, just delete 
-`docker rmi -f $(docker image ls | awk '{print $3}')`
->
-
+Inspired by, has content from and based on the following projects:
+https://github.com/OTRF/notebooks-forge
+https://github.com/philhagen/sof-elk/blob/main/VM_README.md
+https://github.com/Cyb3rWard0g/HELK/tree/master/docker
+https://github.com/Security-Onion-Solutions/securityonion
+and others.
 
 ### File Structure
 
