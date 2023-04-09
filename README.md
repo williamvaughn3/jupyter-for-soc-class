@@ -3,11 +3,12 @@
 Source container is all-spark-notebook.
 
 Inspired by, has content from and based on the following projects:
-https://github.com/OTRF/notebooks-forge
-https://github.com/philhagen/sof-elk/blob/main/VM_README.md
-https://github.com/Cyb3rWard0g/HELK/tree/master/docker
-https://github.com/Security-Onion-Solutions/securityonion
-and others.
+
+    https://github.com/OTRF/notebooks-forge
+    https://github.com/philhagen/sof-elk/blob/main/VM_README.md
+    https://github.com/Cyb3rWard0g/HELK/tree/master/docker
+    https://github.com/Security-Onion-Solutions/securityonion
+    and others.
 
 ### File Structure
 
